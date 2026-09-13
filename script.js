@@ -4,6 +4,10 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+
   const video = document.getElementById('demoVideo') || document.getElementById('appDemoVideo');
   const playOverlayBtn = document.getElementById('playOverlayBtn') || document.getElementById('mainPlayBtn');
   const miniPlayBtn = document.getElementById('miniPlayBtn') || document.getElementById('togglePlayBtn');

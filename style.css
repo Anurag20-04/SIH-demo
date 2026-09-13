@@ -402,6 +402,20 @@ body {
   gap: 6px;
 }
 
+.pill-icon {
+  width: 14px;
+  height: 14px;
+  stroke: var(--primary-terracotta);
+  stroke-width: 2.2;
+}
+
+.step-icon-bubble svg {
+  width: 25px;
+  height: 25px;
+  stroke: var(--primary-terracotta);
+  stroke-width: 2;
+}
+
 .hero-cta-group {
   display: flex;
   align-items: center;
