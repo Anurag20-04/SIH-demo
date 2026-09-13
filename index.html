@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karigar Setu • Team Zenith • Smart India Hackathon 2026</title>
+  
+  <!-- Google Fonts: Dune-style Cinzel, Modern Outfit & Plus Jakarta Sans, Handwritten Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cinzel:wght@600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Canvas Paper Texture & Warm Ambient Lighting -->
+  <div class="canvas-paper-texture"></div>
+  <div class="dune-ambient-glow"></div>
+
+  <!-- ==========================================================================
+       TOP FLOATING PILL NAVBAR
+       ========================================================================== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <!-- Left: Brand Name -->
+      <a href="#demo" class="brand-link">
+        <div class="brand-text-stack">
+          <span class="brand-team-label">Team Zenith</span>
+          <span class="brand-app-name">Karigar<span>Setu</span></span>
+        </div>
+      </a>
+
+      <!-- Center: Clean Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#demo" class="nav-btn active">Live Demo</a></li>
+        <li><a href="#journey" class="nav-btn">AI Craft Suite</a></li>
+        <li><a href="#showcase" class="nav-btn">App Screens</a></li>
+        <li><a href="#impact" class="nav-btn">Artisan Impact</a></li>
+      </ul>
+
+      <!-- Right: Official Smart India Hackathon 2026 Badge -->
+      <div class="sih-badge-pill" title="Smart India Hackathon 2026 • Problem SIH26090">
+        <div class="sih-tricolor-dot"></div>
+        <div class="sih-badge-content">
+          <span class="sih-label">SIH 2026</span>
+          <span class="sih-problem">Problem #SIH26090</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SHOWCASE SECTION (Modeled directly after the reference image)
+       ========================================================================== -->
+  <section id="demo" class="hero-section">
+
+    <!-- Background Concentric Dotted Orbital Tracks & Moving Paper Airplane -->
+    <svg class="orbital-tracks-svg" viewBox="0 0 1600 950" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer Orbit Track -->
+      <ellipse cx="800" cy="475" rx="680" ry="410" class="orbit-dash" />
+      <!-- Middle Orbit Track -->
+      <ellipse cx="800" cy="475" rx="530" ry="320" class="orbit-dash-fine" />
+      <!-- Inner Orbit Track -->
+      <ellipse cx="800" cy="475" rx="390" ry="240" class="orbit-dash" />
+      
+      <!-- Coordinate label like 72696 in reference -->
+      <text x="440" y="720" class="orbital-coord coord-1">72696</text>
+
+      <!-- Flying Paper Airplane gliding along the orbital trajectory -->
+      <g class="gliding-plane-group">
+        <path d="M 0,-7 L 16,0 L 0,7 L 3,0 Z" fill="#D95D39" />
+      </g>
+    </svg>
+
+    <!-- ======================================================================
+         CUSTOM CRAFT DIE-CUT STICKERS (100% Relatable to Karigar Setu)
+         Placed strictly in the outer zones so they NEVER overlap any text!
+         ====================================================================== -->
+
+    <!-- Sticker 1: Artisan Potter Crafting at Wheel (Top-Left) -->
+    <div class="diecut-craft-sticker sticker-pos-tl" title="Traditional Clay Potter at the Wheel">
+      <div class="sticker-diecut-plate">
+        <svg class="sticker-svg" viewBox="0 0 140 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="140" height="105" rx="14" fill="#FFF6EB"/>
+          <!-- Terracotta Wheel -->
+          <ellipse cx="70" cy="85" rx="48" ry="12" fill="#8B4513"/>
+          <ellipse cx="70" cy="83" rx="42" ry="10" fill="#B85D2A"/>
+          <circle cx="70" cy="83" r="5" fill="#5C2605"/>
+          <!-- Wet Clay Pot being shaped -->
+          <ellipse cx="70" cy="62" rx="20" ry="8" fill="#C86D3B"/>
+          <path d="M 52 62 Q 44 48 54 36 Q 64 30 70 30 Q 76 30 86 36 Q 96 48 88 62 Z" fill="#D9773E"/>
+          <ellipse cx="70" cy="30" rx="16" ry="5" fill="#E88A4F"/>
+          <ellipse cx="70" cy="30" rx="11" ry="3.5" fill="#78340E"/>
+          <!-- Artisan Hands shaping clay -->
+          <path d="M 40 45 Q 50 40 54 44 L 52 50 Q 44 48 38 52 Z" fill="#A75B30"/>
+          <path d="M 100 45 Q 90 40 86 44 L 88 50 Q 96 48 102 52 Z" fill="#A75B30"/>
+          <!-- Clay Splatters / Sparkles -->
+          <circle cx="34" cy="32" r="2" fill="#D9773E"/>
+          <circle cx="106" cy="30" r="2.5" fill="#D9773E"/>
+        </svg>
+        <span class="sticker-tag-label">Pottery Craft</span>
+      </div>
+    </div>
+
+    <!-- Sticker 2: Bastar Dhokra Carved Brass Elephant (Bottom-Left) -->
+    <div class="diecut-craft-sticker sticker-pos-bl" title="Traditional Bastar Dhokra Brass Elephant">
+      <div class="sticker-diecut-plate">
+        <svg class="sticker-svg" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="120" height="100" rx="14" fill="#FDF7EE"/>
+          <!-- Brass Elephant Figurine Body -->
+          <path d="M 32 68 Q 24 58 26 48 Q 28 38 42 34 Q 58 32 78 38 Q 94 44 92 68 L 86 82 L 78 82 L 79 70 L 48 70 L 47 82 L 38 82 Z" fill="#A3702C"/>
+          <!-- Upraised Trunk & Tusks -->
+          <path d="M 26 48 Q 14 42 16 28 Q 20 22 24 30 Q 22 40 30 46" fill="#BF873A"/>
+          <path d="M 28 46 L 22 48 L 26 44 Z" fill="#FFFFFF"/>
+          <!-- Royal Decorative Blanket / Howdah in Terracotta & Gold Wirework -->
+          <rect x="52" y="34" width="28" height="20" rx="3" fill="#C05621"/>
+          <line x1="52" y1="38" x2="80" y2="38" stroke="#F59E0B" stroke-width="1.5"/>
+          <line x1="52" y1="44" x2="80" y2="44" stroke="#F59E0B" stroke-width="1.5"/>
+          <line x1="52" y1="50" x2="80" y2="50" stroke="#F59E0B" stroke-width="1.5"/>
+        </svg>
+        <span class="sticker-tag-label">Dhokra Brass</span>
+      </div>
+    </div>
+
+    <!-- Sticker 3: Handcrafted Painted Ceramic Vase (Top-Right) -->
+    <div class="diecut-craft-sticker sticker-pos-tr" title="Jaipur Blue & Terracotta Glazed Ceramic Vase">
+      <div class="sticker-diecut-plate">
+        <svg class="sticker-svg" viewBox="0 0 125 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="125" height="105" rx="14" fill="#F4F8FA"/>
+          <!-- Ceramic Urn Neck & Rim -->
+          <ellipse cx="62" cy="22" rx="18" ry="5.5" fill="#C05621"/>
+          <rect x="52" y="22" width="20" height="12" fill="#D9773E"/>
+          <!-- Urn Bulbous Body -->
+          <path d="M 44 32 Q 26 55 34 78 Q 42 90 62 90 Q 82 90 90 78 Q 98 55 80 32 Z" fill="#1E5C8A"/>
+          <!-- Intricate Floral Motif on Vase -->
+          <circle cx="62" cy="62" r="10" fill="#FBBF24"/>
+          <circle cx="62" cy="62" r="4.5" fill="#D95D39"/>
+          <ellipse cx="62" cy="46" rx="5" ry="7" fill="#FBBF24"/>
+          <ellipse cx="62" cy="78" rx="5" ry="7" fill="#FBBF24"/>
+          <ellipse cx="48" cy="62" rx="7" ry="5" fill="#FBBF24"/>
+          <ellipse cx="76" cy="62" rx="7" ry="5" fill="#FBBF24"/>
+        </svg>
+        <span class="sticker-tag-label">Glazed Pottery</span>
+      </div>
+    </div>
+
+    <!-- Sticker 4: Handcrafted Kantha Embroidered Tote Bag (Bottom-Right) -->
+    <div class="diecut-craft-sticker sticker-pos-br" title="Bengal Handcrafted Kantha Tote Bag">
+      <div class="sticker-diecut-plate">
+        <svg class="sticker-svg" viewBox="0 0 135 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="135" height="110" rx="14" fill="#FDF5F2"/>
+          <!-- Leather Handles -->
+          <path d="M 45 42 C 45 18, 62 18, 62 42" stroke="#6B3914" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M 73 42 C 73 18, 90 18, 90 42" stroke="#6B3914" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <!-- Bag Body with Floral Kantha Stitch -->
+          <polygon points="34,42 101,42 94,96 41,96" fill="#C05621"/>
+          <!-- Kantha Embroidery Motifs -->
+          <line x1="38" y1="52" x2="97" y2="52" stroke="#FDE68A" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <line x1="40" y1="84" x2="95" y2="84" stroke="#FDE68A" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Center Lotus / Peacock Motif -->
+          <circle cx="67" cy="68" r="8" fill="#FBBF24"/>
+          <circle cx="67" cy="68" r="3" fill="#DC2626"/>
+          <path d="M 52 68 Q 60 62 67 68 Q 74 62 82 68 Q 74 74 67 68 Q 60 74 52 68" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span class="sticker-tag-label">Kantha Handloom</span>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         3-COLUMN HERO COMPOSITION (Faithful to Reference Layout)
+         ====================================================================== -->
+    <div class="hero-content-grid">
+
+      <!-- LEFT COLUMN: Brand Title, Taglines & Action Buttons -->
+      <div class="hero-col-left">
+        <div class="presenting-eyebrow">
+          <span class="dune-line"></span>
+          <span class="presenting-text">TEAM ZENITH PRESENTS</span>
+          <span class="dune-line"></span>
+        </div>
+
+        <h1 class="hero-main-title">
+          KARIGAR<br>SETU
+        </h1>
+
+        <p class="hero-tagline-sub">
+          <strong>Crafted by hands. Powered by AI. Connected to the world.</strong><br>
+          Transforming India's 7M+ traditional artisans into digital entrepreneurs through voice-first catalogue generation and fair market linkage.
+        </p>
+
+        <div class="hero-pills-row">
+          <div class="hero-info-pill">
+            <span>🏛️</span> MoSJE, Govt. of India
+          </div>
+          <div class="hero-info-pill">
+            <span>🎯</span> SIH Problem SIH26090
+          </div>
+          <div class="hero-info-pill">
+            <span>🎙️</span> Voice-First AI
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <button id="heroPlayTrigger" class="btn-primary-glow">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Watch App Demo
+          </button>
+          <a href="#journey" class="btn-secondary-outline">
+            <span>Explore AI Suite</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- CENTER COLUMN: REALISTIC SMARTPHONE MOCKUP PLAYING DEMO.MP4 -->
+      <div class="hero-col-center">
+        <div class="phone-wrapper" id="phoneWrapper">
+          <div class="smartphone-frame">
+            
+            <!-- Glass Screen Glare Reflection Overlay -->
+            <div class="phone-glare-reflection"></div>
+
+            <!-- Top Clean Phone Status Bar -->
+            <div class="phone-status-bar">
+              <span class="phone-time">9:41</span>
+              <div class="dynamic-island"></div>
+              <div class="phone-icons">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9z"/></svg>
+                <span class="battery-pill"></span>
+              </div>
+            </div>
+
+            <!-- Video Player Screen: Demo.mp4 with Centered Red Play Button -->
+            <div class="phone-video-container" id="videoContainer">
+              <video 
+                id="demoVideo" 
+                class="demo-app-video" 
+                src="Demo.mp4" 
+                playsinline 
+                loop 
+                muted 
+                preload="metadata"
+                poster="assets/karigar-app-overview.jpg">
+                Your browser does not support the video tag.
+              </video>
+
+              <!-- Central Red YouTube / Play Button Overlay (Modeled after reference) -->
+              <button id="playOverlayBtn" class="play-overlay-btn" aria-label="Play Demo Video">
+                <svg viewBox="0 0 24 24">
+                  <polygon points="6 3 20 12 6 21 6 3"/>
+                </svg>
+              </button>
+
+              <!-- Interactive Floating Video Control Bar -->
+              <div class="video-interactive-bar" id="videoBar">
+                <button class="mini-control-btn" id="miniPlayBtn" title="Play/Pause">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </button>
+                <div class="video-progress-container" id="progressBar" title="Scrub video">
+                  <div class="video-progress-fill" id="progressFill"></div>
+                </div>
+                <button class="mini-control-btn" id="muteBtn" title="Mute / Unmute">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/></svg>
+                </button>
+                <button class="mini-control-btn" id="fullscreenBtn" title="Fullscreen">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                </button>
+              </div>
+
+              <!-- Phone Bottom Home Indicator Bar -->
+              <div class="phone-home-indicator"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Narrative Problem/Solution & Handwritten Arrow Sticker -->
+      <div class="hero-col-right">
+        
+        <div class="narrative-card">
+          <div class="narrative-quote-mark">“</div>
+          <p class="narrative-text">
+            Our rich cultural heritage faces the constant threat of decay and marginalization. 
+            Over <strong>7 Million Indian artisans</strong> possess extraordinary ancestral craft, 
+            yet remain constrained by digital barriers, opaque middlemen, and underpriced labor.
+          </p>
+          <p class="narrative-text">
+            We introduce <span class="narrative-highlight">Karigar Setu</span> — an AI-powered enterprise manager 
+            empowering rural craftspeople with voice-first cataloging, studio photo enhancement, and fair pricing algorithms, truly 
+            <span class="narrative-highlight">"bringing authentic Indian craftsmanship to the world forever."</span>
+          </p>
+        </div>
+
+        <!-- Hand-Drawn "check out this video" sticker with curved doodle pointer arrow -->
+        <div class="check-video-doodle-wrapper">
+          <span class="check-video-doodle-text">check out<br>this video</span>
+          <svg class="check-video-arrow-svg" viewBox="0 0 60 45">
+            <!-- Curved hand-drawn arrow pointing directly towards the phone -->
+            <path d="M 48 8 C 30 10, 15 22, 10 35" stroke="#757575" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M 10 35 L 20 32" stroke="#757575" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M 10 35 L 14 24" stroke="#757575" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- 4 Key Impact Stat Boxes -->
+        <div class="narrative-stats-grid">
+          <div class="stat-box">
+            <span class="stat-number">0%</span>
+            <span class="stat-label">Middlemen Cut</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">3x</span>
+            <span class="stat-label">Artisan Profit Margin</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Voice-Guided Flow</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">4K</span>
+            <span class="stat-label">AI Studio Photos</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: THE 5-STEP ARTISAN JOURNEY: SNAP → SPEAK → CREATE → PRICE → SELL
+       ========================================================================== -->
+  <section id="journey" class="feature-journey-section">
+    <div class="section-header-block">
+      <span class="section-kicker">End-to-End Artisan Workflow</span>
+      <h2 class="section-title-large">From Raw Craft to <span>Global Marketplace</span></h2>
+      <p class="section-sub-desc">
+        Engineered specifically for rural artisans with zero digital literacy. Voice-first, visual-first, and fully offline-resilient.
+      </p>
+    </div>
+
+    <!-- 5 Step Cards -->
+    <div class="journey-steps-grid">
+      <!-- Step 1 -->
+      <div class="journey-step-card">
+        <span class="step-num-pill">Step 01</span>
+        <div class="step-icon-bubble">📷</div>
+        <h3 class="step-title">Snap</h3>
+        <p class="step-desc">
+          Artisan takes a quick photo on any low-cost phone with on-screen framing guides and lighting tips.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="journey-step-card">
+        <span class="step-num-pill">Step 02</span>
+        <div class="step-icon-bubble">✨</div>
+        <h3 class="step-title">AI Studio</h3>
+        <p class="step-desc">
+          Computer vision auto-removes cluttered background, restores authentic texture, and creates 4K studio lighting.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="journey-step-card">
+        <span class="step-num-pill">Step 03</span>
+        <div class="step-icon-bubble">🎙️</div>
+        <h3 class="step-title">Speak</h3>
+        <p class="step-desc">
+          Artisan speaks naturally in Hindi, Bengali, Tamil, or Marathi. AI extracts craft type, material, and weave story.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="journey-step-card">
+        <span class="step-num-pill">Step 04</span>
+        <div class="step-icon-bubble">💰</div>
+        <h3 class="step-title">Price</h3>
+        <p class="step-desc">
+          Fair Pricing Engine calculates material cost + labor hours + live market demand to protect artisan wages.
+        </p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="journey-step-card">
+        <span class="step-num-pill">Step 05</span>
+        <div class="step-icon-bubble">🤝</div>
+        <h3 class="step-title">Sell</h3>
+        <p class="step-desc">
+          Instant buyer matching for B2B corporate gifting, export orders, and government procurement (GeM & ONDC).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: MOBILE APP SCREENS VISUAL SHOWCASE
+       ========================================================================== -->
+  <section id="showcase" class="feature-journey-section" style="background:#FFF9F3; padding-top:20px;">
+    <div class="app-screens-showcase">
+      <div class="showcase-flex">
+        <div class="showcase-content">
+          <span class="section-kicker">Mobile-First Experience</span>
+          <h3>Designed with the Dignity of Indian Hands</h3>
+          <p>
+            Karigar Setu is not just another e-commerce platform. It is a compassionate virtual business manager 
+            celebrating each artisan's authentic story. Every interaction is supported with voice prompts, 
+            large tactile touch targets, and culturally resonant visual metaphors.
+          </p>
+          <ul class="showcase-feature-list">
+            <li class="showcase-feature-item">
+              <span class="feature-check-icon">✓</span>
+              <span><strong>Multilingual Voice-to-Catalogue:</strong> Intuitive mother-tongue speech to professional product listings.</span>
+            </li>
+            <li class="showcase-feature-item">
+              <span class="feature-check-icon">✓</span>
+              <span><strong>AI Product Photography:</strong> Segment-Anything powered studio backdrops and lighting enhancement.</span>
+            </li>
+            <li class="showcase-feature-item">
+              <span class="feature-check-icon">✓</span>
+              <span><strong>Transparent Fair Cost Breakdown:</strong> Raw materials, labor time, and ethical profit margin protection.</span>
+            </li>
+            <li class="showcase-feature-item">
+              <span class="feature-check-icon">✓</span>
+              <span><strong>Offline-First Architecture:</strong> Full offline functionality in remote tribal craft clusters with delta sync.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="showcase-image-frame">
+          <img src="assets/karigar-app-overview.jpg" alt="Karigar Setu Mobile Application Screens Showcase" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: ARTISAN IMPACT & SOCIAL JUSTICE
+       ========================================================================== -->
+  <section id="impact" class="feature-journey-section" style="background: #FAF6EF;">
+    <div class="section-header-block">
+      <span class="section-kicker">Ministry of Social Justice & Empowerment</span>
+      <h2 class="section-title-large">Direct Economic Empowerment for <span>Marginalized Weavers</span></h2>
+      <p class="section-sub-desc">
+        Aligning technological innovation with India's vision of inclusive economic growth, digital equity, and preserving timeless craft legacies.
+      </p>
+    </div>
+
+    <div class="journey-steps-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="journey-step-card">
+        <div class="step-icon-bubble">⚖️</div>
+        <h3 class="step-title">Eliminating Middlemen</h3>
+        <p class="step-desc">
+          Artisans typically retain only 15-20% of their product's retail value. Karigar Setu connects them directly to institutional and export buyers, increasing take-home margins to over 75%.
+        </p>
+      </div>
+      <div class="journey-step-card">
+        <div class="step-icon-bubble">🗣️</div>
+        <h3 class="step-title">Overcoming Literacy Barriers</h3>
+        <p class="step-desc">
+          Illiteracy should never be an obstacle to digital commerce. By replacing typed forms with conversational voice prompts in native mother tongues, any artisan can build a storefront in 90 seconds.
+        </p>
+      </div>
+      <div class="journey-step-card">
+        <div class="step-icon-bubble">🌍</div>
+        <h3 class="step-title">Global Provenance Storytelling</h3>
+        <p class="step-desc">
+          Every product listing carries a verified artisan card and geo-tagged heritage story. Conscious global consumers connect directly with the maker, preserving ancestral traditions for generations to come.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER: DUNE-STYLE TEAM ZENITH SIGN-OFF & CREDITS
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <h3 class="footer-title">TEAM ZENITH</h3>
+      <p class="footer-motto">IDEAS TODAY • A BRIGHTER TOMORROW</p>
+      <p class="footer-subtitle">
+        Innovating at the convergence of Artificial Intelligence, Cultural Preservation, and Social Equity.
+      </p>
+
+      <div class="footer-badges-row">
+        <span class="footer-badge">Smart India Hackathon 2026</span>
+        <span class="footer-badge">Problem Statement ID: SIH26090</span>
+        <span class="footer-badge">Ministry of Social Justice & Empowerment</span>
+        <span class="footer-badge">Karigar Setu AI Platform</span>
+      </div>
+
+      <div class="footer-bottom-line">
+        <span>© 2026 Team Zenith • Karigar Setu Project</span>
+        <span>Crafted with Pride in India 🇮🇳</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
