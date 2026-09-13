@@ -20,11 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!video) return;
 
+  // Sound on by default
+  video.muted = false;
+  if (muteBtn) {
+    muteBtn.innerHTML = unmutedIconSvg();
+  }
+
   function togglePlay() {
     if (video.paused || video.ended) {
+      video.muted = false; // ensure sound plays by default
       video.play().then(() => {
         if (playOverlayBtn) playOverlayBtn.classList.add('hidden');
         if (miniPlayBtn) miniPlayBtn.innerHTML = pauseIconSvg();
+        if (muteBtn) muteBtn.innerHTML = unmutedIconSvg();
       }).catch((err) => {
         console.warn("Video playback note:", err);
       });
